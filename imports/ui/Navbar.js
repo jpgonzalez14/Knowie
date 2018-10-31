@@ -3,7 +3,7 @@ import {Meteor} from 'meteor/meteor';
 import {Link} from 'react-router-dom';
 
 import AccountsUIWrapper from './AccountsUIWrapper.js';
-
+//el login y sign up se pueden realizar personalizado con accounts, de esta forma ustedes podrian crear sus propios templates sin limitarse al que viene por defecto 
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +12,8 @@ export default class Navbar extends Component {
       onChange: props.onChange
     };
   }
-
+//la imagen del logo deberia ser mas grande
+//con google fonts pueden explorar tipografias que den valor a lo que quieren transmitir 
   render() {
     return (
       <nav className="navbar sticky-top">
